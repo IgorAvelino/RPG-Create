@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset= "UTF-8">
-    <link rel= stylesheet href="css/erro.css">
+    <link rel= stylesheet href="css/construcao.css">
     <link rel="shortcut icon" href="img/fav.png">
     <title>Personagens da Comunidade!</title>
 </head>
