@@ -95,7 +95,7 @@
                 </tr>
 
                 <tr>  
-                    <th>Habilidade</th>
+                    <th>Habilidades</th>
                     <td> <?php echo $linha_usu['Habilidades']; ?> </td>
                 </tr>
 
@@ -105,6 +105,10 @@
                 </tr>
 
             </table>
+
+            <div class="bot">
+                <input type="button" value="VOLTAR" class="botao" onclick="location.href='../exibicao.php'">
+            </div>
         </section>
         
     <?php } ?>

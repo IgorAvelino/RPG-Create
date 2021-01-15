@@ -23,6 +23,7 @@
         $resultado = mysqli_query($conexao, $sql) or die ('Erro na query');
         ?>
     
+        <input type="button" value="VOLTAR" class="botao-comu" onclick="location.href='index.html'">
         <main>
 
     <?php while ($linha_usu = mysqli_fetch_assoc($resultado)){ 
@@ -35,7 +36,7 @@
 
             <form action="php/exibir_personagem.php" method="post">
                 <input type="hidden" name="id" id="id" value="<?php echo $id ?>">
-                <input type="submit" class="bot-sub" value="Ver Completo">
+                <input type="submit" class="bot-sub" value="Ver Personagem">
             </form>
         </section>
         
