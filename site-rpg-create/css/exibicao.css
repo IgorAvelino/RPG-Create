@@ -89,6 +89,7 @@ table.ex tr th, table.ex tr td{
 table.ex tr th{
     text-align: right;
     background: #ED217C;
+    width: 50px;
 }
 table.ex tr td{
     background: #797979;
