@@ -12,6 +12,8 @@
     <?php
     require_once 'conexao.php';
 
+    mysqli_set_charset($conexao,"utf8");
+
     $rpg = mysqli_real_escape_string($conexao, trim($_POST["rpg"]??'Não Definido'));
     $player = mysqli_real_escape_string($conexao, trim($_POST["player"]??'Não Definido'));
     $nome = mysqli_real_escape_string($conexao, trim($_POST["nome"]??'Não Definido'));
