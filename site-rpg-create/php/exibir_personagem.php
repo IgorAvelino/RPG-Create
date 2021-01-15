@@ -14,6 +14,8 @@
     <?php
         require_once "conexao.php";
 
+        mysqli_set_charset($conexao,"utf8");
+
         $id = $_POST["id"] or die ('Erro ao encontrar personagem');
 
         $sql = "SELECT * FROM personagens WHERE Id = $id";
