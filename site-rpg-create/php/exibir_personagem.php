@@ -3,7 +3,8 @@
 <head>
     <meta charset= "UTF-8">
     <link rel= stylesheet href="../css/exibicao.css">
-    <title><?php ?></title>
+    <link rel="shortcut icon" href="../img/fav.png">
+    <title>Personagem Criado</title>
 </head>
 <body>
 <div class="bola1"></div>
