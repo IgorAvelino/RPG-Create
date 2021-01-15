@@ -76,6 +76,61 @@ p span{
     color: #3af321
 }
 
+input.bot-sub{
+    padding: 8px 18px;
+    margin: 5px 0;
+    background: #ED217C;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s linear background-color;
+}
+input.bot-sub:hover{
+    background: #2193f3;
+}
+
+.bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    background: #ED217C;
+    font-size: 13pt;
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 20px;
+    width: 80%;
+    transition: .5s color, .5s background;
+}
+.botao:hover{
+    background: #dddddd;
+    color: #ED217C;
+}
+
+.botao-comu{
+    position: absolute;
+    top: 20px;
+    right: 5vw;
+    padding: 10px 20px;
+    background: #e91e63;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s background;
+}
+.botao-comu:hover{
+    background: #af0f44;
+}
+
 .ex{
     width: 75vw;
     padding: 10px;
