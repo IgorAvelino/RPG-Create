@@ -25,88 +25,18 @@
     
         <main>
 
-    <?php while ($linha_usu = mysqli_fetch_assoc($resultado)){ ?>  
+    <?php while ($linha_usu = mysqli_fetch_assoc($resultado)){ 
+        $id = $linha_usu['Id'];
+    ?>  
         
         <section>
             <h3><?php echo $linha_usu['Nome']; ?></h3>
             <p>Criado por: <span><?php echo $linha_usu['Player']; ?></span></p>
-            <table class="ex" cellspacing="5">
-                <tr>
-                    <th>RPG</th>
-                    <td> <?php echo $linha_usu['RPG']; ?> </td>
-                </tr>
 
-                <tr>
-                    <th>Player</th>
-                    <td> <?php echo $linha_usu['Player']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Nome</th>
-                    <td> <?php echo $linha_usu['Nome']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Sexo</th>
-                    <td> <?php echo $linha_usu['Sexo']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Raça</th>
-                    <td> <?php echo $linha_usu['Raça']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Classe</th>
-                    <td> <?php echo $linha_usu['Classe']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Afiliações</th>
-                    <td> <?php echo $linha_usu['Afiliações']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Cargo</th>
-                    <td> <?php echo $linha_usu['Cargo']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>LV</th>
-                    <td> <?php echo $linha_usu['LV']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Hp Max</th>
-                    <td> <?php echo $linha_usu['HP_Max']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Hp Atual</th>
-                    <td> <?php echo $linha_usu['HP_Atual']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>AC</th>
-                    <td> <?php echo $linha_usu['AC']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Gold</th>
-                    <td> <?php echo $linha_usu['Gold']; ?> </td>
-                </tr>
-
-                <tr>  
-                    <th>Habilidade</th>
-                    <td> <?php echo $linha_usu['Habilidades']; ?> </td>
-                </tr>
-
-                <tr>
-                    <th>Itens</th>
-                    <td> <?php echo $linha_usu['Itens']; ?> </td>
-                </tr>
-
-            </table>
+            <form action="php/exibir_personagem.php" method="post">
+                <input type="hidden" name="id" id="id" value="<?php echo $id ?>">
+                <input type="submit" class="bot-sub" value="Ver Completo">
+            </form>
         </section>
         
     <?php } ?>
