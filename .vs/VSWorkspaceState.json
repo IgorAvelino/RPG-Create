@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\site-rpg-create"
+    "\\site-rpg-create",
+    "\\site-rpg-create\\css",
+    "\\site-rpg-create\\php"
   ],
-  "SelectedNode": "\\site-rpg-create\\index.html",
+  "SelectedNode": "\\site-rpg-create\\img",
   "PreviewInSolutionExplorer": false
 }
